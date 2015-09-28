@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{053EE0C0-392E-402B-A758-4AD14E35C776}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VRX</RootNamespace>
+    <AssemblyName>VRX.Windows.Forms</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VRX.Windows.Forms.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VRX.Windows.Forms.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>VRX.Windows.Forms.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>VRX.Windows.Forms.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionList\ReportBoardActionList.vb" />
+    <Compile Include="Control\FieldValueEventArgs.vb" />
+    <Compile Include="Control\ReportBoard.Designer.vb">
+      <DependentUpon>ReportBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ReportBoard.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ReportControl.Designer.vb">
+      <DependentUpon>ReportControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ReportControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ReportField.Designer.vb">
+      <DependentUpon>ReportField.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ReportField.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ReportSection.Designer.vb">
+      <DependentUpon>ReportSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ReportSection.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ReportText.Designer.vb">
+      <DependentUpon>ReportText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ReportText.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Designer\ReportBoardDesigner.vb" />
+    <Compile Include="Designer\ReportControlDesigner.vb" />
+    <Compile Include="Designer\ReportSectionDesigner.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PropertyGrid\AlignmentEditor.vb" />
+    <Compile Include="PropertyGrid\BorderEditor.vb" />
+    <Compile Include="PropertyGrid\AlignmentEditorControl.Designer.vb">
+      <DependentUpon>AlignmentEditorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrid\AlignmentEditorControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\BorderEditorControl.Designer.vb">
+      <DependentUpon>BorderEditorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGrid\BorderEditorControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\BoxMarginConverter.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyGrid\AlignmentEditorControl.resx">
+      <DependentUpon>AlignmentEditorControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyGrid\BorderEditorControl.resx">
+      <DependentUpon>BorderEditorControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignBottomCenter.png" />
+    <None Include="Resources\AlignBottomLeft.png" />
+    <None Include="Resources\AlignBottomRight.png" />
+    <None Include="Resources\AlignMiddleCenter.png" />
+    <None Include="Resources\AlignMiddleLeft.png" />
+    <None Include="Resources\AlignMiddleRight.png" />
+    <None Include="Resources\AlignTopCenter.png" />
+    <None Include="Resources\AlignTopLeft.png" />
+    <Content Include="Resources\AlignTopRight.png" />
+    <Content Include="Resources\BottomBorder.png" />
+    <Content Include="Resources\LeftBorder.png" />
+    <Content Include="Resources\RightBorder.png" />
+    <Content Include="Resources\TopBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.vbproj">
+      <Project>{6ba5eb62-4565-4b7a-b028-e104f14064b3}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
