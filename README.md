@@ -16,6 +16,11 @@ Documentation of how to use each class will be write later but it is easy to und
 
 Enjoy it.
 
+### Donate
+
+If you want to collaborate with a donation through Paypal, please visit the following page:
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MPKQKKLJTMMDS
+
 ### License
 
 This project is licensed under the MIT license: http://choosealicense.com/licenses/mit/
